@@ -8,6 +8,7 @@
   <body>
     <nav>
       <a href="about.html">About us</a>
+      <a href="#cats">My cat</a>
     </nav>
     <!-- Document Content -->
     <header>
@@ -15,14 +16,69 @@
     </header>
     <main>
       <!-- The src, or source, is an attribute that tells the image tag which image it should display-->
-      <img width="300" src="images/kitten.jpg" alt="Cute kitten lying on a blanket" title="Cute kitten" >
+      <img width="1000" src="images/kitten.jpg" alt="Cute kitten lying on a blanket" title="Cute kitten" >
+      <article>
+        <!-- The 'a' tag, or anchor tag, creates a link to take a user somewhere else. -->
+        <!-- The href tag tells the browser where the link should go -->
+        <!-- The text in between the opening and closing a tags is what the user clicks on -->
+        <a target="_blank" href="https://google.ca">Google (FYI)</a>
+      </article>
+      <article id="cats">
+        <h2>My cat</h2>
+        <p> Cats are great
+        </p>
+        <ul>
+          <li>There're fluffy</li>
+          <li> They're fun</li>
+        </ul>
+      </article>
+      <form action="index.html" method="get">
+        <p>
+          <label for="username">Name: </label>
+          <input id="username" name="username" placeholder="Myusername">
+        </p>
+        <p>
+          <label for="pass">Password: </label>
+          <input id="pass" type="password" name="password">
+        </p>
+        <p>
+          <label for="col">Pick a colour: </label>
+          <input id="col" type="color" name="color">
+        </p>
+        <p>
+          <label for="num">Pick a number: </label>
+          <input id="num" type="range" name="num" value="4">
+        </p>
+        <p>
+          <label for="info"> Enter the info: </label>
+          <textarea id="info" name="info">Write text here</textarea>
+        </p>
+        <p>
+          <label for="fruit">Pick a fruit: </label>
+          <select id="fruit" name="fruit">
+            <option value="null">Choose...</option>
+            <option value="Banana">Banana</option>
+            <option value="Grape">Grape</option>
+            <option value="Apple">Apple</option>
+          </select>
+        </p>
+        <p>
+          <label for="spam"> Spam me: </label>
+          <input type="checkbox" id="spam" value="ilikespam" name="spam" checked>
+        </p>
+        <p>
+          <span>Do you like dogs: </span>
+            <label for="yes">Yes!</label>
+            <input type="radio" name="dogs" id="yes" value="yes">
+            <label for="no">No...</label>
+            <input type="radio" name="dogs" id="no" value="no">        
+        </p>
+        <p>
+          <button type="submit" name="submit">Submit!</button>
+        </p>
+    </form>
     </main>
-    <article>
-      <!-- The 'a' tag, or anchor tag, creates a link to take a user somewhere else. -->
-      <!-- The href tag tells the browser where the link should go -->
-      <!-- The text in between the opening and closing a tags is what the user clicks on -->
-      <a target="_blank" href="https://google.ca">Google (FYI)</a>
-    </article>
+    
     <footer>
         <article>&copy; Somebody, Somewhere, 2021</article>
     </footer>
